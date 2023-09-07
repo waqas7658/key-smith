@@ -23,9 +23,33 @@ const Services = () => {
         <div className="swiper container ">
           <Swiper {...sliderSettings} className="p-5">
             {/* <SlideButton /> */}
-            {ServiceData.map((items, index) => (
+            {/* {ServiceData.map((items, index) => (
               <SwiperSlide key={index}>
                 <ServiceCard {...items} />
+                
+              </SwiperSlide>
+            ))} */}
+
+            {ServiceData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div
+                  key={item.id}
+                  className="max-w-md h-[27rem] py-4 px-8  bg-blue-400 shadow-lg rounded-lg my-20"
+                >
+                  <div className="flex justify-center md:justify-end -mt-16">
+                    <img
+                      className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                      src={item.image}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-gray-800 text-lg lg:text-3xl  font-semibold">
+                      {item.title}
+                    </h2>
+                    <p className="mt-2 text-black">{item.description}</p>
+                  </div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -8,7 +8,7 @@ import Services from "../Components/OurServices/Services";
 const Home = () => {
   return (
     <>
-      <Hero />
+      <Hero1 />
       <WhoWeAre />
       <Achivement />
       <Services />
