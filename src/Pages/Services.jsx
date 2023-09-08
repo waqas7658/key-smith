@@ -12,13 +12,13 @@ const Services = () => {
           >
             <div className="flex justify-center md:justify-end -mt-16">
               <img
-                className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                className="w-32 h-32 object-cover rounded-full border-2 border-indigo-500"
                 src={item.image}
                 alt={item.title}
               />
             </div>
             <div>
-              <h2 className="text-gray-800 text-lg lg:text-3xl  font-semibold">
+              <h2 className="text-gray-800 text-lg lg:text-3xl my-4  font-semibold">
                 {item.title}
               </h2>
               <p className="mt-2 text-black">{item.description}</p>
